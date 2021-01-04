@@ -1,0 +1,166 @@
+2020-0813
+1.    verify LAC1 release version. 
+2.    setup c-lib perf platform on 440. 
+3.    enhance KCI automation. 
+  
+Todo: 
+1.    check hang issue on 440. 
+2.    veriry KCI with Jenkins. 
+
+2020-0818
+1.	setup profile data collect enviroment.
+2.	enhance KCI for integrating into Jenkins.
+3.	fix an issue in an app: (one context multiple thread).
+
+Todo:
+1.	assist Ryan to setup KCI on Jenkins.
+2.	440 board still exists hang issue, wait Jtag to be ready.
+
+2020-0825
+1.	assist to setup verification environment on Shanghai side.
+2.	remove clib test from juno 10.190.0.101 to juno 10.190.0.103.
+
+Todo:
+1.	continue to assist debug 440 hang issue.
+
+2020-0901
+1.	trace 440 hang issue, found two local timers of 6cg cores may be disabled
+	due to some unclear cause.
+2.	assit Isaac to duplicate the hang issue based on the enviroment of his 440 board.
+
+Todo:
+1.	continue to assist debug 440 hang issue.
+2.	prepare to set up CI/KCI based on new PC server.
+3.	update automatical scripts on test platforms per new ftp account management strategy.
+
+2020-0908
+QiangHuang
+1.	based on Kevin's Image/aipu.ko, the system doesn't hang. it only exists difference
+	relate to toolchain and linux kernel(maybe), need further check.
+2.	KCI multiple Linux version support.
+
+Todo:
+1.	further 440 hang issue.
+2.	low level APIs verification.
+
+2020-0915
+QiangHuang
+1.	print parsing support in UMD.
+2.	low level APIs verify.
+
+Todo:
+1.	deploy multiple kernel KCI verification.
+2.	low level APIs verification.
+
+2020-0922
+QiangHuang
+1.	shufflet_v2, onnxshufflet_v2 exist check failed issue, assist to debug.
+2.	print parsing feature is ready.
+3.	impletment 60% code for low level APIs verification.
+
+Todo:
+1.	verify runtime UMD/KMD for code release.
+2.	continue to enhance low level APIs verification.
+
+2020-1019
+QiangHuang
+1.	adapt CI test framework according to new FTP strategy.
+2.	adapt clib test and profile test.
+
+Todo:
+1.	verify CI, clib and profile test framework.
+2.	continue to debug low level APIs.
+
+2020-1026
+QiangHuang
+1.	enhance and verify CI test framework.
+2.	finish the basic implementation for low level APIs verification.
+3.	implement a wrapper APP for protecting FTP account.
+
+Todo:
+1.	verify benchmark on HW board for Z2_0901.
+
+2020-1102
+QiangHuang
+1.	implemented profile data collection feature based on new runtime.
+2.	assit to debug benchmark issue related to Z2_0901/Z2_1104.
+3.	improve print feature according to new requirement.
+
+Todo:
+1.	add multiple-graph-multiple-frame to LL APIs test APP.
+2.	assist to debug print feature on HW platform.
+
+2020-1110
+QiangHuang
+1.	verify the latest runtime driver and benchmark on HW platform.
+2.	add multiple-graph-multiple-frame to LL APIs test APP.
+3.	verify print feature based on benchmark with print log.
+
+Todo:
+1.	verify the latest runtime driver and benchmark according to release requirement.
+2.	integrate LLAPI test into CI.
+
+2020-1117
+QiangHuang
+1.	verify the latest runtime driver and benchmark on HW platform.
+2.	enhance LLAPI test APP and setup test framework.
+
+Todo:
+1.	cowork with Ryan to integrate LLAPI test into Jenkins.
+2.	KCI integrate.
+
+Hongman
+1.	verfication for Z1_1002/Z1_0701/Z2_0901 on Juno platform.
+2.	clean the logic related to breakdump.
+
+Todo:
+1.	setup environment for compiling Python UMD APIs.
+
+2020-1124
+QiangHuang
+1.	setup low level API test enviroment on Juno.
+2.	the memory allocation logic in low level UMD need double check.
+3.	add Linux-5.4 to KCI, but it needs time to adapt KMD with this Linux version.
+
+Todo:
+1.	debug low level API test on 6cg after MM allocation issue being fixed.
+2.	integrate Linux-5.4 into KCI.
+
+2020-1201
+QiangHuang
+1.	assist to debug Clib test issue, the root cause was located.
+2.	assist to debug the issue about non-configure ASE1&ASE2.
+3.	try to integrate Linux 5.4 into KCI, it exists issue on committing job.
+
+Todo:
+1.	verify new release benchmark.
+2.	locate the issue on integrating Linux 5.4 into KCI.
+
+2020-1208
+QiangHuang
+1.	verify the latest benchmarks and bitfile.
+2.	add new feature for Clib test: copy files to result directory according to benchmark order.
+3.	add new feature for KCI: generate and deploy new dtb for different Linux version.
+
+Todo:
+1.	virification for release.
+2.	debug new Linux version for KCI.
+
+2020-1215
+QiangHuang
+1.	verify the latest benchmarks and bitfile.
+2.	support environment setup for print feature test on Juno.
+3.	fix the issue for supporting Linux-5.4 in KCI.
+
+Todo:
+1.	verification for release.
+2.	add Linux-5.5 or higher version with KCI.
+
+2020-1229
+QiangHuang
+1.	verify the latest benchmarks.
+2.	track non-perfdata issue.
+3.	correct an issue related to larger alignment requirement in low level API test.
+
+Todo:
+1.	enhance and clean Test APPs based on the latets UMD/KMD.

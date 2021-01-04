@@ -1,0 +1,69 @@
+2020-10-20
+QiangHuang
+1. Finish VTS test environment setup.
+2. Add descriptor handle logic in bare metal test based on Juno. but some benchmark still hang issue.
+3. Exist environment issue on verifying UMD python APIs，need to update Juno original environment.
+4. Adapt CI/clib/profile test framework according to new FTP strategy. 
+
+2020-10-28
+QiangHuang
+1.	Finished about 30% OP rerun test for Android10.
+2.	Bare metal test: all benchmark for Zhouyi_v1 can pass normally, but it still exists issue for Zhouyi_qian.
+3.	Implemented multiple-graph-multiple-frame case for runtime UMD Python APIs on Juno.
+4.	Finished the basic test case for low-level-APIs.
+
+2020-11-4
+QiangHuang
+1.	Finish about 45% OP rerun test for Android10.
+2.	Bare metal test: Debug on 440 board for further support solution team.
+3.	Enhance UMD Python APIs test logic.
+4.	Track the benchmark issues related to z2_0901/z2_1104, till now the issues were fixed.
+
+2020-11-10
+QiangHuang
+1.	Finish about 55% OP rerun test for Android10.
+2.	Bare metal test: focus on verification on Z1 according to release requirement.
+3.	Focus on verification related to runtime and benchmarks on Juno&440.
+4.	Verify the basic cases related to print log feature on HW platforms except Z2_1002.
+5.	The latest generated bitfile for Z2_1104 & Z2_1002 can't work.
+
+2020-11-18
+QiangHuang
+1.	Focus on verification task for release requirement.
+2.	Finish about 60% OP rerun test for Android10.
+3.	Bare metal test: it needs support for debug on 440 board.
+4.	Verify bitfile for Z2_1104&Z2_1002 on 440 board, and verify bitfile for Z2_0901 on Juno.
+5.	Integrate low level API test into CI, finish 90% work.
+
+2020-12-02
+QiangHuang
+1.	Adapt all Android9 OPs rerun test with Android10.
+2.	Bare metal test: after correcting ASE configuration, benchmarks can normally run on 440.
+3.	Verify Python UMD APIs based on the latest UMD version.
+4.	Assist to debug the issue about non-configure ASE1&ASE2.
+5.	Assist to debug Clib test issue: input tensor's order doesn't match with input files order.
+
+2020-12-09
+1.	Verify the latest benchmarks and bitfiles, found Z2_juno_1002 bitfile exists issue.
+2.	Add test cases for two new OPs(about 10%) of NNAPI29.
+3.	Bare metal test: currently there's no block issue for verification on 440 board.
+4.	Finish the basic use cases for python UMD APIs.
+5.	Verify KMD&UMD after fix an issue.
+
+2020-12-16
+1.	Verify the latest benchmarks and bitfiles, found Z1_0701 multiple batch: mobilenet_v2 exists issue.
+2.	Add 6 new OPs rerun test on Android10.
+3.	Add multiple batch support on bare metal verification.
+4.	Finish UMD Python APIs test.
+5.	Add Linux-5.4.66 to KCI after fixing a dtb issue.
+
+2020-12-28
+1.	Verify the latest benchmarks，no issue found.
+2.	Correct an issue related to buffer base address alignment in low level test.
+3.	Track non-perfdata issue.
+4.	Aging test exists configuration issue.
+
+2020-12-31
+1.	Add test case for about 20% OPs of NNAPI29.
+2.	Enhance test APP to collect necessary error log.
+3.	Add low level single APIs test.
